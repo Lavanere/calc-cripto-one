@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="https://criptodev.corporate.gama.academy/" target="_Blank"><img id="img-cripto" src="./logo-cripto-dev.svg" alt=""></a>
+      
+      <a href="https://www.gama.academy/" target="_blank"><img id="img-gama" src="./gama-branco.svg" alt=""></a>
+    </header>
+    
+    <div onclick = "displayAbout()" id="arrow">
+      <span id="animation" class="material-icons">
+        arrow_drop_down_circle
+      </span>
+    </div>
+    <div style="display: none;" id="about">
+      <p>
+          Instruções para uso do teclado: todos as teclas funcionam de acordo com as 
+          respectivas teclas da calculadora convêncional, com exceção da tecla "r" para raiz
+          quadrada e "p" para exponenciação. Apreveite a calculadora e lets go!!!
+      </p>
+    </div>
+
+    <main class="grid-container">
+      
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="orange" id="clear">AC</button>
+      <button data-operator id="expo" class="orange">^</button>
+      <button data-operator id="percent" class="orange">%</button>
+      <button data-operator class="operator" id="divide">÷</button>
+      <button data-number id="one" class="orange">1</button>
+      <button data-number id="two" class="orange">2</button>
+      <button data-number id="tree" class="orange">3</button>
+      <button data-operator class="operator" id="multiply">*</button>
+      <button data-number id="four" class="orange">4</button>
+      <button data-number id="five" class="orange">5</button>
+      <button data-number id="six" class="orange">6</button>
+      <button data-operator class="operator" id="add">+</button>
+      <button data-number id="seven" class="orange">7</button>
+      <button data-number id="eight" class="orange">8</button>
+      <button data-number id="nine" class="orange">9</button>
+      <button data-operator class="operator" id="subtract">-</button>
+      <button data-number id="zero" class="orange">0</button>
+      <button data-number class="orange" id="decimal">.</button>
+      <button data-delete id="del" class="orange">
+        <span class="material-symbols-outlined">
+          backspace
+        </span>
+      </button>
+      <button data-equals class="operator" id="equal">=</button>
+    </main>
+    <footer>
+      <footer>
+        <img src="./Blockchain-Academy-principal.svg" alt="" class="rodape">
+    </footer>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
